@@ -19,11 +19,13 @@ const App = () => {
       <footer>
         <p>
           <span class="footer-icon">Made with</span>
-          <FontAwesomeIcon icon={['fab', 'react']} />
+          <a href="https://reactjs.org/" target="_blank" class="react-icon">
+            <FontAwesomeIcon icon={['fab', 'react']} />
+          </a>
           <span class="footer-icon">-</span>
           <FontAwesomeIcon icon={['far', 'copyright']} />
           <span class="footer-icon">2021 by Lucinda Souchet</span>
-          <a href="https://github.com/sctlcd" target="_blank">
+          <a href="https://github.com/sctlcd" target="_blank" class="github-icon">
             <FontAwesomeIcon icon={['fab', 'github']} />
           </a>
         </p>
