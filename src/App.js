@@ -1,60 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
 import './App.css';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      greeting: ''
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+library.add(fab, far);
 
-  handleChange(event) {
-    this.setState({ name: event.target.value });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-    fetch(`/api/greeting?name=${encodeURIComponent(this.state.name)}`)
-      .then(response => response.json())
-      .then(state => this.setState(state));
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <form onSubmit={this.handleSubmit}>
-            <label htmlFor="name">Enter your name: </label>
-            <input
-              id="name"
-              type="text"
-              value={this.state.name}
-              onChange={this.handleChange}
-            />
-            <button type="submit">Submit</button>
-          </form>
-          <p>{this.state.greeting}</p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
+const App = () => {
+  return (
+    <div className="app">
+      <header>
+        <h1>React Video Chat</h1>
+      </header>
+      <main>
+        <p>VideoChat goes here.</p>
+      </main>
+      <footer>
+        <p>
+          <span class="footer-icon">Made with</span>
+          <FontAwesomeIcon icon={['fab', 'react']} />
+          <span class="footer-icon">-</span>
+          <FontAwesomeIcon icon={['far', 'copyright']} />
+          <span class="footer-icon">2021 by Lucinda Souchet</span>
+          <a href="https://github.com/sctlcd" target="_blank">
+            <FontAwesomeIcon icon={['fab', 'github']} />
           </a>
-        </header>
-      </div>
-    );
-  }
-}
+        </p>
+      </footer>
+    </div>
+  );
+};
 
 export default App;
