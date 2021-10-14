@@ -43,3 +43,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## React Twilio starter
 
 The [twilio branch](https://github.com/philnash/react-express-starter/tree/twilio) is a similar setup but also provides endpoints with basic [Access Tokens](https://www.twilio.com/docs/iam/access-tokens) for [Twilio Programmable Chat](https://www.twilio.com/docs/chat) and [Twilio Programmable Video](https://www.twilio.com/docs/video). You can use the project as a base for building React chat or video applications.
+
+
+## Credits
+
+- favicon.ico - [Flaticon](https://www.flaticon.com/premium-icon/video-chat_5193286?term=video%20chat&page=1&position=7&page=1&position=7&related_id=5193286&origin=search) | Copyright [Freepik](https://www.flaticon.com/authors/freepik)
