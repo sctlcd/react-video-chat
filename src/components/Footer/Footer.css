@@ -1,0 +1,20 @@
+footer {
+    background: #4b4b4b;
+    color: #fafafa;
+    text-align: center;
+    flex-grow: 0;
+    padding: 1rem 0;
+  }
+  
+footer .react-icon  {
+color: #61dafb;
+}
+
+footer .github-icon  {
+color: #ffc543;
+}
+
+.footer-icon {
+margin-right: 0.4rem;
+margin-left: 0.4rem;
+}
