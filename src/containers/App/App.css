@@ -1,44 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  color: #333e5a;
-  min-height: 100%;
-  background-color: #f0f0f0;
-}
-
-#root {
-  min-height: 100vh;
-}
-
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-/************************************************* Header */
-
-header {
-  background:#0e2a70;
-  color: #fafafa;
-  text-align: center;
-  flex-grow: 0;
-  margin-bottom: 2rem;
-  padding: 1rem 0 1rem 0;
-}
-
-h1 {
-  font-weight: 400;
-  padding: 0.4rem 0;
 }
 
 /************************************************* Main */
