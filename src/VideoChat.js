@@ -28,6 +28,10 @@ const VideoChat = () => {
     setToken(data.token);
   }, [username, roomName]);
 
+  const handleLogout = useCallback(event => {
+    setToken(null);
+  }, []);
+
   <div></div> // To be build later
 };
 
